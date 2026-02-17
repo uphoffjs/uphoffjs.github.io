@@ -20,7 +20,7 @@ export default function Home() {
         </p>
 
         {/* Philosophy */}
-        <p className="text-gray-500 mt-6 max-w-lg mx-auto leading-relaxed">
+        <p className="text-gray-400 mt-6 max-w-lg mx-auto leading-relaxed">
           Building confidence in every release through strategic test automation
           and quality-first thinking.
         </p>
