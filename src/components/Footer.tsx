@@ -4,7 +4,7 @@ export default function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="border-t border-gray-800 mt-auto">
+    <footer data-cy="footer" className="border-t border-gray-800 mt-auto">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-gray-500 text-sm">
@@ -12,6 +12,7 @@ export default function Footer() {
           </p>
           <div className="flex items-center gap-4">
             <a
+              data-cy="footer-github"
               href="https://github.com/uphoffjs"
               target="_blank"
               rel="noopener noreferrer"

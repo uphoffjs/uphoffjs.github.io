@@ -7,10 +7,10 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <section className="min-h-[calc(100vh-4rem)] flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8">
+    <section data-cy="home-hero" className="min-h-[calc(100vh-4rem)] flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8">
       <div className="max-w-2xl mx-auto">
         {/* Name */}
-        <h1 className="bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent text-5xl sm:text-6xl font-bold tracking-tight">
+        <h1 data-cy="home-heading" className="bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent text-5xl sm:text-6xl font-bold tracking-tight">
           Jacob Uphoff
         </h1>
 
@@ -27,6 +27,7 @@ export default function Home() {
 
         {/* CTA */}
         <Link
+          data-cy="home-cta"
           href="/projects"
           className="inline-block bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white px-8 py-3 rounded-lg transition-all font-medium mt-8"
         >

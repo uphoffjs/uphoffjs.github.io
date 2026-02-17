@@ -14,11 +14,12 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="sticky top-0 z-50 bg-gray-950/90 backdrop-blur-sm border-b border-gray-800">
+    <nav data-cy="navbar" className="sticky top-0 z-50 bg-gray-950/90 backdrop-blur-sm border-b border-gray-800">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo / Name */}
           <Link
+            data-cy="nav-logo"
             href="/"
             className="font-semibold text-lg text-white hover:text-green-400 transition-colors"
           >
@@ -31,12 +32,14 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
+                data-cy={`nav-link-${link.label.toLowerCase()}`}
                 className="text-gray-300 hover:text-green-400 transition-colors text-sm font-medium"
               >
                 {link.label}
               </Link>
             ))}
             <a
+              data-cy="nav-github"
               href="https://github.com/uphoffjs"
               target="_blank"
               rel="noopener noreferrer"
@@ -49,6 +52,7 @@ export default function Navbar() {
 
           {/* Mobile hamburger */}
           <button
+            data-cy="nav-menu-button"
             className="md:hidden text-gray-300 hover:text-green-400 transition-colors"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
@@ -60,12 +64,13 @@ export default function Navbar() {
 
       {/* Mobile dropdown */}
       {isOpen && (
-        <div className="md:hidden border-t border-gray-800 bg-gray-950/95">
+        <div data-cy="nav-mobile-menu" className="md:hidden border-t border-gray-800 bg-gray-950/95">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col gap-4">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
+                data-cy={`nav-mobile-link-${link.label.toLowerCase()}`}
                 className="text-gray-300 hover:text-green-400 transition-colors text-sm font-medium"
                 onClick={() => setIsOpen(false)}
               >

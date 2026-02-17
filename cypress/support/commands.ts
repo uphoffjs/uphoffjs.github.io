@@ -1,18 +1,18 @@
 declare global {
   namespace Cypress {
     interface Chainable {
-      getBySel(selector: string, ...args: unknown[]): Chainable<JQuery<HTMLElement>>
-      getBySelLike(selector: string, ...args: unknown[]): Chainable<JQuery<HTMLElement>>
+      getBySel(selector: string, options?: Partial<Loggable & Timeoutable & Withinable & Shadow>): Chainable<JQuery<HTMLElement>>
+      getBySelLike(selector: string, options?: Partial<Loggable & Timeoutable & Withinable & Shadow>): Chainable<JQuery<HTMLElement>>
     }
   }
 }
 
-Cypress.Commands.add('getBySel', (selector: string, ...args: unknown[]) => {
-  return cy.get(`[data-cy="${selector}"]`, ...args)
+Cypress.Commands.add('getBySel', (selector: string, options?: Partial<Cypress.Loggable & Cypress.Timeoutable & Cypress.Withinable & Cypress.Shadow>) => {
+  return cy.get(`[data-cy="${selector}"]`, options)
 })
 
-Cypress.Commands.add('getBySelLike', (selector: string, ...args: unknown[]) => {
-  return cy.get(`[data-cy*="${selector}"]`, ...args)
+Cypress.Commands.add('getBySelLike', (selector: string, options?: Partial<Cypress.Loggable & Cypress.Timeoutable & Cypress.Withinable & Cypress.Shadow>) => {
+  return cy.get(`[data-cy*="${selector}"]`, options)
 })
 
 export {}
