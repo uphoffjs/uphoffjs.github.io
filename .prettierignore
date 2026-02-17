@@ -1,0 +1,10 @@
+.next
+out
+build
+node_modules
+reports
+cypress/videos
+cypress/screenshots
+cypress/downloads
+.stryker-tmp
+package-lock.json

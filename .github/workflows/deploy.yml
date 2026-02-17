@@ -11,7 +11,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: 'pages'
   cancel-in-progress: false
 
 jobs:
@@ -24,8 +24,8 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
-          cache: "npm"
+          node-version: '20'
+          cache: 'npm'
 
       - name: Restore cache
         uses: actions/cache@v4
@@ -69,9 +69,16 @@ jobs:
           node-version: '20'
           cache: 'npm'
 
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint Cypress best practices
+        run: npm run lint:cypress
+
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
+          install: false
           build: npm run build
           start: npx serve out -l 4173
           wait-on: 'http://localhost:4173'

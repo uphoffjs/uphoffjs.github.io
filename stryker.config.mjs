@@ -1,5 +1,5 @@
 /** @type {import('@stryker-mutator/api/core').PartialStrykerOptions} */
-export default {
+const config = {
   mutate: [
     'src/components/**/*.tsx',
     'src/app/**/page.tsx',
@@ -18,3 +18,5 @@ export default {
   concurrency: 1,
   cleanTempDir: 'always',
 }
+
+export default config
