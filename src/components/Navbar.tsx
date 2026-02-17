@@ -37,7 +37,7 @@ export default function Navbar() {
               </Link>
             ))}
             <a
-              href="https://github.com/username"
+              href="https://github.com/uphoffjs"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
@@ -73,7 +73,7 @@ export default function Navbar() {
               </Link>
             ))}
             <a
-              href="https://github.com/username"
+              href="https://github.com/uphoffjs"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-gray-300 hover:text-green-400 transition-colors text-sm font-medium"
