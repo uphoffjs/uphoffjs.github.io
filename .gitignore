@@ -44,3 +44,7 @@ next-env.d.ts
 cypress/videos/
 cypress/screenshots/
 cypress/downloads/
+
+# Stryker mutation testing
+reports/
+.stryker-tmp/
