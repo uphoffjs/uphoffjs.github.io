@@ -12,7 +12,7 @@ function terminalLog(violations: Cypress.Axe.Result[]) {
 const pages = ['/', '/about/', '/projects/', '/links/']
 
 describe('WCAG AA accessibility', () => {
-  pages.forEach((path) => {
+  pages.forEach(path => {
     it(`${path} has zero WCAG AA violations`, () => {
       cy.visit(path)
       cy.injectAxe()
@@ -24,7 +24,7 @@ describe('WCAG AA accessibility', () => {
             values: ['wcag2a', 'wcag2aa'],
           },
         },
-        terminalLog
+        terminalLog,
       )
     })
   })

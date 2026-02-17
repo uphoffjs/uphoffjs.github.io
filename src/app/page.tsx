@@ -7,10 +7,16 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <section data-cy="home-hero" className="min-h-[calc(100vh-4rem)] flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8">
+    <section
+      data-cy="home-hero"
+      className="min-h-[calc(100vh-4rem)] flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8"
+    >
       <div className="max-w-2xl mx-auto">
         {/* Name */}
-        <h1 data-cy="home-heading" className="bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent text-5xl sm:text-6xl font-bold tracking-tight">
+        <h1
+          data-cy="home-heading"
+          className="bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent text-5xl sm:text-6xl font-bold tracking-tight"
+        >
           Jacob Uphoff
         </h1>
 
@@ -21,8 +27,8 @@ export default function Home() {
 
         {/* Philosophy */}
         <p className="text-gray-400 mt-6 max-w-lg mx-auto leading-relaxed">
-          Building confidence in every release through strategic test automation
-          and quality-first thinking.
+          Building confidence in every release through strategic test automation and quality-first
+          thinking.
         </p>
 
         {/* CTA */}
