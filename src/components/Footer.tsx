@@ -15,7 +15,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
-              className="text-gray-400 hover:text-green-400 transition-colors"
+              className="text-gray-400 hover:text-green-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-950"
             >
               <Github size={18} />
             </a>

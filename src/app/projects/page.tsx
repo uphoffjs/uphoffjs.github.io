@@ -9,7 +9,10 @@ export const metadata: Metadata = {
 export default function ProjectsPage() {
   return (
     <div data-cy="projects-page" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <h1 data-cy="page-heading" className="text-4xl font-bold text-gray-100 mb-4">
+      <h1
+        data-cy="page-heading"
+        className="text-4xl font-bold bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent mb-4"
+      >
         Projects
       </h1>
       <p className="text-gray-400 mb-12 max-w-lg">

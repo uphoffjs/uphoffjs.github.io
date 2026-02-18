@@ -37,7 +37,7 @@ export default function Home() {
           <Link
             data-cy="home-cta"
             href="/projects"
-            className="inline-block bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white px-8 py-3 rounded-lg transition-all font-medium mt-8"
+            className="inline-block bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white px-8 py-3 rounded-lg transition-all font-medium mt-8 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-950"
           >
             See My Work
           </Link>
@@ -56,7 +56,7 @@ export default function Home() {
         data-cy="home-skills-preview"
         className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16"
       >
-        <h2 className="text-center text-sm font-mono uppercase tracking-widest text-green-500 mb-8">
+        <h2 className="text-center text-sm font-mono uppercase tracking-widest bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent mb-8">
           What I Work With
         </h2>
         <ul className="flex flex-wrap justify-center gap-3">
@@ -77,7 +77,9 @@ export default function Home() {
         data-cy="home-cta-section"
         className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center"
       >
-        <h2 className="text-2xl font-bold text-gray-100 mb-4">Let&apos;s work together</h2>
+        <h2 className="text-2xl font-bold bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent mb-4">
+          Let&apos;s work together
+        </h2>
         <p className="text-gray-400 mb-8 max-w-md mx-auto">
           Looking for a QA engineer who takes quality seriously? Get in touch.
         </p>
@@ -85,14 +87,14 @@ export default function Home() {
           <Link
             data-cy="home-cta-projects"
             href="/projects"
-            className="px-6 py-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white rounded-lg transition-all font-medium"
+            className="px-6 py-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white rounded-lg transition-all font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-950"
           >
             View My Work
           </Link>
           <Link
             data-cy="home-cta-links"
             href="/links"
-            className="px-6 py-3 border border-gray-700 hover:border-green-500 text-gray-300 hover:text-green-400 rounded-lg transition-all font-medium"
+            className="px-6 py-3 border border-gray-700 hover:border-green-500 text-gray-300 hover:text-green-400 rounded-lg transition-all font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-950"
           >
             Get in Touch
           </Link>

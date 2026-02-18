@@ -7,20 +7,19 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div
-      data-cy="about-page"
-      className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16"
-    >
+    <div data-cy="about-page" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <h1
         data-cy="page-heading"
-        className="text-4xl font-bold text-gray-100 mb-12"
+        className="text-4xl font-bold bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent mb-12"
       >
         About
       </h1>
 
       {/* Section 1 — Bio */}
-      <section data-cy="about-bio" className="mb-16">
-        <h2 className="text-xl font-semibold text-green-400 mb-4">My Story</h2>
+      <section data-cy="about-bio" className="mb-0">
+        <h2 className="text-xl font-semibold bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent mb-4">
+          My Story
+        </h2>
         <p className="text-gray-400 leading-relaxed mb-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
           ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -40,9 +39,13 @@ export default function AboutPage() {
         </p>
       </section>
 
+      <hr className="border-0 h-px bg-gradient-to-r from-transparent via-green-500/30 to-transparent my-16" />
+
       {/* Section 2 — QA Philosophy */}
-      <section data-cy="about-philosophy" className="mb-16">
-        <h2 className="text-xl font-semibold text-green-400 mb-4">Approach to Quality</h2>
+      <section data-cy="about-philosophy" className="mb-0">
+        <h2 className="text-xl font-semibold bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent mb-4">
+          Approach to Quality
+        </h2>
         <p className="text-gray-400 leading-relaxed mb-4">
           At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
           voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
@@ -57,15 +60,23 @@ export default function AboutPage() {
         </p>
       </section>
 
+      <hr className="border-0 h-px bg-gradient-to-r from-transparent via-green-500/30 to-transparent my-16" />
+
       {/* Section 3 — Skills */}
-      <section data-cy="about-skills" className="mb-16">
-        <h2 className="text-xl font-semibold text-green-400 mb-6">Skills &amp; Tools</h2>
+      <section data-cy="about-skills" className="mb-0">
+        <h2 className="text-xl font-semibold bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent mb-6">
+          Skills &amp; Tools
+        </h2>
         <SkillsGrid />
       </section>
 
+      <hr className="border-0 h-px bg-gradient-to-r from-transparent via-green-500/30 to-transparent my-16" />
+
       {/* Section 4 — Interests */}
       <section data-cy="about-interests" className="mb-16">
-        <h2 className="text-xl font-semibold text-green-400 mb-4">Beyond Work</h2>
+        <h2 className="text-xl font-semibold bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent mb-4">
+          Beyond Work
+        </h2>
         <p className="text-gray-400 leading-relaxed mb-4">
           Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
           nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in

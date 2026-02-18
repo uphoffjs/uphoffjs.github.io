@@ -36,7 +36,10 @@ function getLinkIcon(type: SiteLink['type']) {
 export default function LinksPage() {
   return (
     <div data-cy="links-page" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <h1 data-cy="page-heading" className="text-4xl font-bold text-gray-100 mb-4">
+      <h1
+        data-cy="page-heading"
+        className="text-4xl font-bold bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent mb-4"
+      >
         Links
       </h1>
       <p className="text-gray-400 mb-12 max-w-lg">
@@ -55,7 +58,7 @@ export default function LinksPage() {
               href={link.href}
               {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
               {...(isResume ? { download: 'jacob-uphoff-resume.pdf' } : {})}
-              className="flex items-center gap-4 p-4 bg-gray-900 border border-gray-800 rounded-lg hover:border-green-800 transition-colors group"
+              className="flex items-center gap-4 p-4 bg-gray-900 border border-gray-800 rounded-lg hover:shadow-[0_0_0_1px_rgba(34,197,94,0.5),0_0_16px_2px_rgba(34,197,94,0.12)] transition-shadow duration-150 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-950"
             >
               {getLinkIcon(link.type)}
               <div>
