@@ -21,6 +21,7 @@ export function ProjectCard({ project }: { project: Project }) {
         ))}
       </ul>
       <Link
+        data-cy="project-card-link"
         href={`/projects/${project.slug}`}
         className="text-green-400 hover:text-green-300 text-sm font-medium transition-colors self-start focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-950"
       >

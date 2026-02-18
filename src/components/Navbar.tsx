@@ -111,6 +111,7 @@ export default function Navbar() {
             </Link>
           ))}
           <a
+            data-cy="nav-mobile-github"
             href="https://github.com/uphoffjs"
             target="_blank"
             rel="noopener noreferrer"

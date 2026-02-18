@@ -7,10 +7,6 @@ export default defineConfig({
     viewportHeight: 720,
     video: false,
     screenshotOnRunFailure: true,
-    retries: {
-      runMode: 2,
-      openMode: 0,
-    },
     setupNodeEvents(on) {
       on('task', {
         log(message: string) {
