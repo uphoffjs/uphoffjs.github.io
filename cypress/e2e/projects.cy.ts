@@ -23,7 +23,11 @@ describe('Projects page', () => {
 describe('Case study page', () => {
   it('navigates from project card to case study', () => {
     cy.visit('/projects/')
-    cy.getBySel('project-card').first().find('a').click()
+    cy.getBySel('project-card')
+      .first()
+      .within(() => {
+        cy.getBySel('project-card-link').click()
+      })
     cy.url().should('include', '/projects/')
     cy.getBySel('case-study').should('be.visible')
   })
