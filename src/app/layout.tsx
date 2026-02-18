@@ -11,7 +11,14 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: 'Jacob Uphoff | Software Quality Assurance Engineer',
-  description: 'Portfolio of Jacob Uphoff — Software Quality Assurance Engineer.',
+  description:
+    'Portfolio of Jacob Uphoff — Software Quality Assurance Engineer specializing in test automation with Cypress, Playwright, and Selenium.',
+  openGraph: {
+    title: 'Jacob Uphoff | Software Quality Assurance Engineer',
+    description:
+      'Portfolio of Jacob Uphoff — Software Quality Assurance Engineer specializing in test automation with Cypress, Playwright, and Selenium.',
+    type: 'website',
+  },
 }
 
 export default function RootLayout({
