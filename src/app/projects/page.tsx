@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import { projects } from '@/data/projects'
+import { ProjectCard } from '@/components/ProjectCard'
 
 export const metadata: Metadata = {
   title: 'Projects | Jacob Uphoff',
@@ -6,19 +8,18 @@ export const metadata: Metadata = {
 
 export default function ProjectsPage() {
   return (
-    <section
-      data-cy="projects-section"
-      className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center"
-    >
-      <span className="text-xs font-mono uppercase tracking-widest text-green-500 mb-4 block">
-        Coming Soon
-      </span>
+    <div data-cy="projects-page" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <h1 data-cy="page-heading" className="text-4xl font-bold text-gray-100 mb-4">
         Projects
       </h1>
-      <p className="text-gray-400 max-w-md mx-auto leading-relaxed">
-        A collection of QA work, automation tools, and experiments. Check back soon.
+      <p className="text-gray-400 mb-12 max-w-lg">
+        A collection of projects where I built applications and practiced automation skills.
       </p>
-    </section>
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {projects.map(project => (
+          <ProjectCard key={project.slug} project={project} />
+        ))}
+      </div>
+    </div>
   )
 }
