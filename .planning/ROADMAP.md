@@ -38,8 +38,10 @@ A Next.js portfolio site with GitHub Pages deployment, Cypress E2E testing, and 
 - **Goal:** Close all integration and flow gaps from v1 audit — CI gates tests before deploy, all interactive elements have data-cy attributes, and homepage/404 pages have full E2E test coverage
 - **Plans:** 3 plans
 
-Plans:
+| Plan | Name                                                 | Status   | Commit           |
+| ---- | ---------------------------------------------------- | -------- | ---------------- |
+| 01   | CI quality gate + Cypress retry removal              | COMPLETE | (04-01)          |
+| 02   | Missing data-cy attributes + selector fixes          | COMPLETE | (04-02)          |
+| 03   | Homepage and 404 E2E specs + existing spec additions | COMPLETE | e26e89c, fa98d5d |
 
-- [ ] 04-01-PLAN.md — CI quality gate + Cypress retry removal
-- [ ] 04-02-PLAN.md — Missing data-cy attributes + selector fixes
-- [ ] 04-03-PLAN.md — Homepage and 404 E2E specs + existing spec additions
+**Phase 04 complete. All 16 previously untested data-cy attributes now have explicit E2E assertions.**
