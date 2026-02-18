@@ -10,7 +10,11 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Jacob Uphoff | Software Quality Assurance Engineer',
+  metadataBase: new URL('https://uphoffjs.github.io'),
+  title: {
+    default: 'Jacob Uphoff | Software Quality Assurance Engineer',
+    template: '%s | Jacob Uphoff',
+  },
   description:
     'Portfolio of Jacob Uphoff — Software Quality Assurance Engineer specializing in test automation with Cypress, Playwright, and Selenium.',
   openGraph: {
@@ -18,7 +22,33 @@ export const metadata: Metadata = {
     description:
       'Portfolio of Jacob Uphoff — Software Quality Assurance Engineer specializing in test automation with Cypress, Playwright, and Selenium.',
     type: 'website',
+    url: 'https://uphoffjs.github.io',
+    siteName: 'Jacob Uphoff',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Jacob Uphoff | Software Quality Assurance Engineer',
+    description:
+      'Portfolio of Jacob Uphoff — Software Quality Assurance Engineer specializing in test automation with Cypress, Playwright, and Selenium.',
+  },
+}
+
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Jacob Uphoff',
+  jobTitle: 'Software Quality Assurance Engineer',
+  url: 'https://uphoffjs.github.io',
+  sameAs: ['https://github.com/uphoffjs', 'https://linkedin.com/in/uphoffjs'],
+  knowsAbout: [
+    'Test Automation',
+    'Cypress',
+    'Playwright',
+    'Selenium',
+    'Quality Assurance',
+    'Software Testing',
+    'WCAG Accessibility',
+  ],
 }
 
 export default function RootLayout({
@@ -28,6 +58,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`dark ${inter.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
+      </head>
       <body className="bg-gray-950 text-gray-100 font-sans min-h-screen flex flex-col antialiased">
         <Navbar />
         <main className="flex-1">{children}</main>

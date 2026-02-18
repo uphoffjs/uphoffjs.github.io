@@ -3,7 +3,15 @@ import { Github, Linkedin, Mail, Download, ExternalLink } from 'lucide-react'
 import { siteLinks, SiteLink } from '@/data/links'
 
 export const metadata: Metadata = {
-  title: 'Links | Jacob Uphoff',
+  title: 'Links',
+  description:
+    'Connect with Jacob Uphoff — GitHub, LinkedIn, email, and resume download. Software Quality Assurance Engineer open to opportunities.',
+  openGraph: {
+    title: 'Links | Jacob Uphoff',
+    description:
+      'Connect with Jacob Uphoff — GitHub, LinkedIn, email, and resume download. Software Quality Assurance Engineer open to opportunities.',
+    url: 'https://uphoffjs.github.io/links',
+  },
 }
 
 function getLinkIcon(type: SiteLink['type']) {

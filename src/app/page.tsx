@@ -4,6 +4,14 @@ import { skillsPreview } from '@/data/skills'
 
 export const metadata: Metadata = {
   title: 'Jacob Uphoff | Software Quality Assurance Engineer',
+  description:
+    'QA engineer portfolio — test automation with Cypress, Playwright, and Selenium. Building confidence in every release through strategic quality-first thinking.',
+  openGraph: {
+    title: 'Jacob Uphoff | Software Quality Assurance Engineer',
+    description:
+      'QA engineer portfolio — test automation with Cypress, Playwright, and Selenium. Building confidence in every release through strategic quality-first thinking.',
+    url: 'https://uphoffjs.github.io',
+  },
 }
 
 export default function Home() {

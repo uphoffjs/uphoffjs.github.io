@@ -3,7 +3,15 @@ import { projects } from '@/data/projects'
 import { ProjectCard } from '@/components/ProjectCard'
 
 export const metadata: Metadata = {
-  title: 'Projects | Jacob Uphoff',
+  title: 'Projects',
+  description:
+    'QA engineering project case studies: end-to-end test automation with Cypress, API contract testing with Playwright, and legacy regression harness with Selenium.',
+  openGraph: {
+    title: 'Projects | Jacob Uphoff',
+    description:
+      'QA engineering project case studies: end-to-end test automation with Cypress, API contract testing with Playwright, and legacy regression harness with Selenium.',
+    url: 'https://uphoffjs.github.io/projects',
+  },
 }
 
 export default function ProjectsPage() {

@@ -2,7 +2,15 @@ import type { Metadata } from 'next'
 import SkillsGrid from '@/components/SkillsGrid'
 
 export const metadata: Metadata = {
-  title: 'About | Jacob Uphoff',
+  title: 'About',
+  description:
+    'Software QA engineer with a background in test automation, ISTQB certification, and a quality-first philosophy. Learn about my approach to testing and the tools I use.',
+  openGraph: {
+    title: 'About | Jacob Uphoff',
+    description:
+      'Software QA engineer with a background in test automation, ISTQB certification, and a quality-first philosophy. Learn about my approach to testing and the tools I use.',
+    url: 'https://uphoffjs.github.io/about',
+  },
 }
 
 export default function AboutPage() {

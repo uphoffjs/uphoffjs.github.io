@@ -17,7 +17,15 @@ export async function generateMetadata({
   const { slug } = await params
   const project = projects.find(p => p.slug === slug)
   if (!project) return { title: 'Project Not Found' }
-  return { title: `${project.title} | Jacob Uphoff` }
+  return {
+    title: project.title,
+    description: project.shortDescription,
+    openGraph: {
+      title: `${project.title} | Jacob Uphoff`,
+      description: project.shortDescription,
+      url: `https://uphoffjs.github.io/projects/${slug}`,
+    },
+  }
 }
 
 export default async function CaseStudyPage({ params }: { params: Promise<{ slug: string }> }) {
