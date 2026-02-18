@@ -5,6 +5,7 @@ const config = {
     'src/app/**/page.tsx',
     'src/app/not-found.tsx',
     '!src/app/layout.tsx',
+    '!src/app/projects/*/page.tsx',
   ],
   testRunner: 'command',
   commandRunner: {
