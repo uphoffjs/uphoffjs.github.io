@@ -21,21 +21,24 @@ export default function AboutPage() {
           My Story
         </h2>
         <p className="text-gray-400 leading-relaxed mb-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          I&apos;m a Software Quality Assurance Engineer focused on building confidence in every
+          release through strategic test automation and quality-first thinking. My path into QA grew
+          from a genuine curiosity about how software breaks — and how to make it harder for it to
+          do so. I enjoy the challenge of designing test strategies that catch real bugs before
+          users do.
         </p>
         <p className="text-gray-400 leading-relaxed mb-4">
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-          anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-          veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          Over the course of my career I&apos;ve worked across the full testing spectrum — from
+          exploratory testing and test case design to building scalable end-to-end automation
+          frameworks with Cypress, Playwright, and Selenium. I hold an ISTQB Foundation
+          certification and believe strongly in applying the right testing technique to the right
+          problem.
         </p>
         <p className="text-gray-400 leading-relaxed">
-          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-          consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-          est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+          I gravitate toward teams that treat quality as a shared responsibility rather than a final
+          gate. Whether it&apos;s pairing with developers to write testable code from the start or
+          reviewing requirements to catch ambiguity early, I aim to shift quality as far left as
+          possible.
         </p>
       </section>
 
@@ -47,16 +50,17 @@ export default function AboutPage() {
           Approach to Quality
         </h2>
         <p className="text-gray-400 leading-relaxed mb-4">
-          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-          voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-          cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id
-          est laborum et dolorum fuga.
+          Quality isn&apos;t a phase at the end of a sprint — it&apos;s a practice woven into every
+          stage of development. My approach starts with understanding the risk: what are the
+          highest-impact areas if something fails? From there I build test coverage that prioritizes
+          confidence in critical paths over chasing 100% line coverage.
         </p>
         <p className="text-gray-400 leading-relaxed">
-          Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
-          nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere
-          possimus, omnis voluptas assumenda est, omnis dolor repellendus temporibusque autem
-          quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet.
+          I favor automation that is fast, reliable, and maintainable. Flaky tests erode trust in
+          the suite, so I invest time upfront in proper selectors, meaningful assertions, and stable
+          test data patterns. I complement automation with targeted exploratory testing — because
+          automated tests can only verify what you thought to write, and exploratory testing finds
+          what you didn&apos;t.
         </p>
       </section>
 
@@ -78,17 +82,16 @@ export default function AboutPage() {
           Beyond Work
         </h2>
         <p className="text-gray-400 leading-relaxed mb-4">
-          Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-          nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
-          vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at
-          vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
-          augue duis dolore te feugait nulla facilisi.
+          Outside of work, I spend a lot of time reading — mostly non-fiction on systems thinking,
+          software craftsmanship, and the occasional deep-dive into how large-scale engineering
+          organizations work. I find that the same principles that make software reliable tend to
+          show up in other complex systems too.
         </p>
         <p className="text-gray-400 leading-relaxed">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-          tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-          quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-          consequat.
+          When I&apos;m not in front of a screen, I enjoy hiking, strategy games, and tinkering with
+          home automation projects. I&apos;m also an avid coffee drinker and firmly believe that a
+          good testing strategy and a well-dialed espresso shot have more in common than people
+          think.
         </p>
       </section>
     </div>
