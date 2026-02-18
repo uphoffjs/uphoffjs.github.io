@@ -32,6 +32,15 @@ describe('Responsive navigation', () => {
       cy.getBySel('nav-drawer-close').click()
       cy.getBySel('nav-drawer').should('not.be.visible')
     })
+
+    it('mobile drawer has GitHub link with correct href', () => {
+      cy.getBySel('nav-menu-button').click()
+      cy.getBySel('nav-drawer').should('be.visible')
+      cy.getBySel('nav-mobile-github')
+        .should('be.visible')
+        .and('have.attr', 'href')
+        .and('include', 'github.com')
+    })
   })
 
   context('Desktop viewport (1280x720)', () => {

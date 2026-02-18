@@ -34,4 +34,16 @@ describe('Page routes load without errors', () => {
     cy.url().should('include', '/links/')
     cy.getBySel('page-heading').should('be.visible')
   })
+
+  it('nav logo links to homepage', () => {
+    cy.visit('/about/')
+    cy.getBySel('nav-logo').should('be.visible').and('have.attr', 'href', '/')
+    cy.getBySel('nav-logo').click()
+    cy.url().should('eq', Cypress.config('baseUrl') + '/')
+  })
+
+  it('footer GitHub link has correct href', () => {
+    cy.visit('/')
+    cy.getBySel('footer-github').should('have.attr', 'href').and('include', 'github.com')
+  })
 })
