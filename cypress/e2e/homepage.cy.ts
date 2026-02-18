@@ -18,7 +18,7 @@ describe('Homepage content', () => {
 
   it('renders CTA section with project and contact links', () => {
     cy.getBySel('home-cta-section').should('be.visible')
-    cy.getBySel('home-cta-projects').should('be.visible').and('have.attr', 'href', '/projects')
-    cy.getBySel('home-cta-links').should('be.visible').and('have.attr', 'href', '/links')
+    cy.getBySel('home-cta-projects').should('be.visible').and('have.attr', 'href', '/projects/')
+    cy.getBySel('home-cta-links').should('be.visible').and('have.attr', 'href', '/links/')
   })
 })
