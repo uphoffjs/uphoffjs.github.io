@@ -65,7 +65,7 @@ export default function LinksPage() {
               data-cy={link.dataCy}
               href={link.href}
               {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-              {...(isResume ? { download: 'jacob-uphoff-resume.pdf' } : {})}
+              {...(isResume ? { download: 'jacob-uphoff-resume.docx' } : {})}
               className="flex items-center gap-4 p-4 bg-gray-900 border border-gray-800 rounded-lg hover:shadow-[0_0_0_1px_rgba(34,197,94,0.5),0_0_16px_2px_rgba(34,197,94,0.12)] transition-shadow duration-150 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-950"
             >
               {getLinkIcon(link.type)}

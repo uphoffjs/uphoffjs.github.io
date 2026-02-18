@@ -30,7 +30,7 @@ export const siteLinks: SiteLink[] = [
   },
   {
     label: 'Resume',
-    href: '/resume.pdf',
+    href: '/jacob-uphoff-resume.docx',
     type: 'resume',
     description: 'Download or view my resume',
     dataCy: 'link-resume',

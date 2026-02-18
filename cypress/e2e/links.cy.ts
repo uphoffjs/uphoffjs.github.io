@@ -19,8 +19,8 @@ describe('Links page', () => {
     cy.getBySel('link-email').should('have.attr', 'href').and('include', 'mailto:')
   })
 
-  it('resume link points to PDF', () => {
-    cy.getBySel('link-resume').should('have.attr', 'href').and('include', '.pdf')
+  it('resume link points to docx', () => {
+    cy.getBySel('link-resume').should('have.attr', 'href').and('include', '.docx')
   })
 
   it('external links open in new tab', () => {

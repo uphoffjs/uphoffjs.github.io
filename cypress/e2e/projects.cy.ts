@@ -29,7 +29,7 @@ describe('Case study page', () => {
   })
 
   it('case study has all required sections', () => {
-    cy.visit('/projects/project-one/')
+    cy.visit('/projects/portfolio-e2e-suite/')
     cy.getBySel('case-study-title').should('be.visible')
     cy.getBySel('case-study-role').should('be.visible')
     cy.getBySel('case-study-problem').should('be.visible')
@@ -39,12 +39,12 @@ describe('Case study page', () => {
   })
 
   it('case study displays role attribution', () => {
-    cy.visit('/projects/project-one/')
+    cy.visit('/projects/portfolio-e2e-suite/')
     cy.getBySel('case-study-role').should('contain.text', 'Solo project')
   })
 
   it('case study tools section has tool badges', () => {
-    cy.visit('/projects/project-one/')
+    cy.visit('/projects/portfolio-e2e-suite/')
     cy.getBySel('case-study-tools').within(() => {
       cy.getBySel('case-study-tool').should('have.length.gte', 3)
     })
