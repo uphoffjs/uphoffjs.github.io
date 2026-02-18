@@ -58,7 +58,11 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
         <h2 className="text-xl font-semibold text-green-400 mb-3">Tools &amp; Technologies</h2>
         <ul className="flex flex-wrap gap-2">
           {project.content.tools.map(tool => (
-            <li key={tool} className="px-3 py-1 bg-gray-800 text-gray-300 text-sm rounded-full">
+            <li
+              key={tool}
+              data-cy="case-study-tool"
+              className="px-3 py-1 bg-gray-800 text-gray-300 text-sm rounded-full"
+            >
               {tool}
             </li>
           ))}

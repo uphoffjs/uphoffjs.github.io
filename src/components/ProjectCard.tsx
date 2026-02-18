@@ -13,6 +13,7 @@ export function ProjectCard({ project }: { project: Project }) {
         {project.tags.map(tag => (
           <li
             key={tag}
+            data-cy="project-tag"
             className="px-2 py-0.5 bg-gray-800 text-green-400 text-xs rounded font-mono"
           >
             {tag}
