@@ -36,7 +36,7 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
 
       - name: Install dependencies
-        run: npm ci
+        run: HUSKY=0 npm ci
 
       - name: Build with Next.js
         run: npx next build
@@ -70,7 +70,7 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci
+        run: HUSKY=0 npm ci
 
       - name: Lint Cypress best practices
         run: npm run lint:cypress
@@ -98,7 +98,7 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci
+        run: HUSKY=0 npm ci
 
       - name: Run Stryker mutation testing
         run: npx stryker run
