@@ -12,15 +12,15 @@ npm run build
 npm run test:e2e
 echo ""
 
-# 3. Run mutation testing on changed spec files
-CHANGED_SPECS=$(git diff --name-only @{push}.. -- 'cypress/e2e/*.cy.ts' 2>/dev/null || git diff --name-only HEAD~1 -- 'cypress/e2e/*.cy.ts' 2>/dev/null || true)
+# 3. Run mutation testing only when new spec files are created (not on edits)
+NEW_SPECS=$(git diff --diff-filter=A --name-only @{push}.. -- 'cypress/e2e/*.cy.ts' 2>/dev/null || git diff --diff-filter=A --name-only HEAD~1 -- 'cypress/e2e/*.cy.ts' 2>/dev/null || true)
 
-if [ -n "$CHANGED_SPECS" ]; then
-  echo "Step 3/3: Running mutation testing (changed test files detected)..."
-  echo "Changed specs: $CHANGED_SPECS"
+if [ -n "$NEW_SPECS" ]; then
+  echo "Step 3/3: Running mutation testing (new test files detected)..."
+  echo "New specs: $NEW_SPECS"
   npm run test:mutate
 else
-  echo "Step 3/3: Skipping mutation testing (no test file changes)"
+  echo "Step 3/3: Skipping mutation testing (no new test files)"
 fi
 
 echo ""

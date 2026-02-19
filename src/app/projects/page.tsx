@@ -5,11 +5,11 @@ import { ProjectCard } from '@/components/ProjectCard'
 export const metadata: Metadata = {
   title: 'Projects',
   description:
-    'QA engineering project case studies: end-to-end test automation with Cypress, API contract testing with Playwright, and legacy regression harness with Selenium.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   openGraph: {
     title: 'Projects | Jacob Uphoff',
     description:
-      'QA engineering project case studies: end-to-end test automation with Cypress, API contract testing with Playwright, and legacy regression harness with Selenium.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     url: 'https://uphoffjs.github.io/projects',
   },
 }
@@ -24,7 +24,7 @@ export default function ProjectsPage() {
         Projects
       </h1>
       <p className="text-gray-400 mb-12 max-w-lg">
-        A collection of projects where I built applications and practiced automation skills.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.
       </p>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map(project => (

@@ -17,53 +17,53 @@ export interface Project {
 export const projects: Project[] = [
   {
     slug: 'portfolio-e2e-suite',
-    title: 'Portfolio E2E Test Suite',
+    title: 'Lorem Ipsum Dolor Sit',
     shortDescription:
-      'End-to-end test automation suite for a Next.js portfolio site, covering navigation, accessibility, responsiveness, and link validation with Cypress and cypress-axe.',
-    tags: ['Cypress', 'TypeScript', 'GitHub Actions'],
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',
+    tags: ['Lorem', 'Ipsum', 'Dolor'],
     content: {
       problem:
-        'A static Next.js portfolio deployed to GitHub Pages needed reliable regression coverage across navigation flows, responsive breakpoints, and WCAG AA accessibility requirements. Manual testing before each deployment was slow and error-prone, and the site had no automated quality gates in CI.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
       approach:
-        'I built a Cypress E2E suite structured around discrete test specs for each concern: navigation and routing, accessibility (via cypress-axe), responsive layout at mobile and desktop viewports, and external link validity. I wired the suite into a GitHub Actions workflow so every push to main triggers a full build-and-test cycle before deployment. Stryker mutation testing was added to verify the effectiveness of the test assertions themselves.',
-      tools: ['Cypress', 'TypeScript', 'cypress-axe', 'GitHub Actions', 'Stryker'],
+        'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
+      tools: ['Lorem', 'Ipsum', 'Dolor', 'Sit', 'Amet'],
       results:
-        'The suite catches regressions automatically on every push. Accessibility violations surface immediately in CI before users encounter them. The mutation testing pass rate confirmed that assertions were genuinely detecting real failures rather than passing vacuously. Deploy confidence increased significantly — no manual pre-deploy checks needed.',
+        'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.',
     },
-    role: 'Solo project — all test design, implementation, and CI configuration by Jacob Uphoff.',
+    role: 'Lorem ipsum — dolor sit amet consectetur adipiscing elit sed do eiusmod.',
   },
   {
     slug: 'api-contract-testing',
-    title: 'REST API Contract & Integration Tests',
+    title: 'Consectetur Adipiscing Elit',
     shortDescription:
-      'Playwright-based API testing suite validating contract compliance, error handling, and response schema integrity for a Python FastAPI service.',
-    tags: ['Playwright', 'Python', 'FastAPI'],
+      'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.',
+    tags: ['Consectetur', 'Adipiscing', 'Elit'],
     content: {
       problem:
-        'A FastAPI microservice exposed a REST API consumed by multiple frontend clients. Schema drift between the API implementation and the documented contract was causing intermittent frontend bugs that were difficult to reproduce. There was no automated contract verification and integration tests were sparse, leaving error-handling paths untested.',
+        'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       approach:
-        "Using Playwright's request API, I wrote a Python-based integration test suite that treated the running FastAPI service as a black box. Tests covered happy-path response schemas, status codes, and pagination, along with negative cases for invalid inputs, missing required fields, and auth failures. I used Pydantic models to define expected response shapes and asserted structural compliance on every response. The suite ran against a local Docker Compose environment in CI.",
-      tools: ['Playwright', 'Python', 'FastAPI', 'Docker', 'Pydantic'],
+        'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.',
+      tools: ['Consectetur', 'Adipiscing', 'Elit', 'Tempor', 'Incididunt'],
       results:
-        'The suite caught three undocumented API breaking changes within the first two weeks of implementation. Error-handling coverage went from near-zero to covering all defined 4xx/5xx paths. The Pydantic schema assertions made it immediately obvious when a field was renamed or dropped, eliminating the category of "silent schema drift" bugs.',
+        'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.',
     },
-    role: 'Solo project — all test design, implementation, and Docker configuration by Jacob Uphoff.',
+    role: 'Consectetur adipiscing — elit sed do eiusmod tempor incididunt ut labore.',
   },
   {
     slug: 'legacy-regression-harness',
-    title: 'Legacy Web App Regression Harness',
+    title: 'Tempor Incididunt Labore',
     shortDescription:
-      'Selenium WebDriver regression suite for a Java Spring Boot web application, stabilizing a brittle existing test suite and expanding critical-path coverage.',
-    tags: ['Selenium', 'Java', 'Spring Boot'],
+      'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis.',
+    tags: ['Tempor', 'Incididunt', 'Labore'],
     content: {
       problem:
-        'A Spring Boot web application had an existing Selenium suite that was failing over 40% of the time due to timing issues, hard-coded waits, and brittle locators tied to generated CSS class names. The team had low trust in the suite and was considering abandoning automated UI testing entirely. Critical user flows — checkout, account management, search — had no reliable coverage.',
+        'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.',
       approach:
-        'I audited the existing suite to categorize failures as timing issues, locator fragility, or genuine defects. Hard-coded `Thread.sleep()` calls were replaced with explicit WebDriverWait conditions. Locators were refactored to use stable data-test-id attributes added with developer collaboration. I extracted a Page Object Model layer to reduce duplication and make locator updates a single-site change. New test specs were written for the three critical paths that had no coverage.',
-      tools: ['Selenium', 'Java', 'Spring Boot', 'Jenkins', 'PostgreSQL'],
+        'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.',
+      tools: ['Tempor', 'Incididunt', 'Labore', 'Dolore', 'Magna'],
       results:
-        'Flakiness rate dropped from 40% to under 3%. The team re-engaged with the suite as a reliable signal. Three previously uncovered critical paths gained full regression coverage. The Page Object refactor made it straightforward to add new tests — developer onboarding time for writing new specs dropped noticeably.',
+        'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.',
     },
-    role: 'Solo project — all test audit, refactoring, and new coverage design by Jacob Uphoff.',
+    role: 'Tempor incididunt — ut labore et dolore magna aliqua ut enim ad minim.',
   },
 ]

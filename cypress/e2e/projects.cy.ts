@@ -44,7 +44,7 @@ describe('Case study page', () => {
 
   it('case study displays role attribution', () => {
     cy.visit('/projects/portfolio-e2e-suite/')
-    cy.getBySel('case-study-role').should('contain.text', 'Solo project')
+    cy.getBySel('case-study-role').should('contain.text', 'Lorem ipsum')
   })
 
   it('case study tools section has tool badges', () => {
