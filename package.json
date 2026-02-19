@@ -14,8 +14,7 @@
     "test:e2e": "start-server-and-test 'npx serve out -l 4173' http://localhost:4173 cy:run",
     "test:e2e:open": "start-server-and-test 'npx serve out -l 4173' http://localhost:4173 cy:open",
     "test:mutate": "npx stryker run",
-    "lint:cypress": "bash scripts/lint-cypress.sh",
-    "prepare": "husky"
+    "lint:cypress": "bash scripts/lint-cypress.sh"
   },
   "dependencies": {
     "lucide-react": "^0.574.0",
