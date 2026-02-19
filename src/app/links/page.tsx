@@ -5,11 +5,11 @@ import { siteLinks, SiteLink } from '@/data/links'
 export const metadata: Metadata = {
   title: 'Links',
   description:
-    'Connect with Jacob Uphoff — GitHub, LinkedIn, email, and resume download. Software Quality Assurance Engineer open to opportunities.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   openGraph: {
-    title: 'Links | Jacob Uphoff',
+    title: 'Links | Lorem Ipsum',
     description:
-      'Connect with Jacob Uphoff — GitHub, LinkedIn, email, and resume download. Software Quality Assurance Engineer open to opportunities.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     url: 'https://uphoffjs.github.io/links',
   },
 }
@@ -51,7 +51,7 @@ export default function LinksPage() {
         Links
       </h1>
       <p className="text-gray-400 mb-12 max-w-lg">
-        Find me online, connect professionally, or grab a copy of my resume.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </p>
 
       <div className="flex flex-col gap-4 max-w-md">

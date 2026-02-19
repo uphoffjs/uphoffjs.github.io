@@ -21,7 +21,7 @@ export async function generateMetadata({
     title: project.title,
     description: project.shortDescription,
     openGraph: {
-      title: `${project.title} | Jacob Uphoff`,
+      title: `${project.title} | Lorem Ipsum`,
       description: project.shortDescription,
       url: `https://uphoffjs.github.io/projects/${slug}`,
     },

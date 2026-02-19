@@ -12,43 +12,35 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://uphoffjs.github.io'),
   title: {
-    default: 'Jacob Uphoff | Software Quality Assurance Engineer',
-    template: '%s | Jacob Uphoff',
+    default: 'Lorem Ipsum | Dolor Sit Amet',
+    template: '%s | Lorem Ipsum',
   },
   description:
-    'Portfolio of Jacob Uphoff — Software Quality Assurance Engineer specializing in test automation with Cypress, Playwright, and Selenium.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   openGraph: {
-    title: 'Jacob Uphoff | Software Quality Assurance Engineer',
+    title: 'Lorem Ipsum | Dolor Sit Amet',
     description:
-      'Portfolio of Jacob Uphoff — Software Quality Assurance Engineer specializing in test automation with Cypress, Playwright, and Selenium.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     type: 'website',
     url: 'https://uphoffjs.github.io',
-    siteName: 'Jacob Uphoff',
+    siteName: 'Lorem Ipsum',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Jacob Uphoff | Software Quality Assurance Engineer',
+    title: 'Lorem Ipsum | Dolor Sit Amet',
     description:
-      'Portfolio of Jacob Uphoff — Software Quality Assurance Engineer specializing in test automation with Cypress, Playwright, and Selenium.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
 }
 
 const personSchema = {
   '@context': 'https://schema.org',
   '@type': 'Person',
-  name: 'Jacob Uphoff',
-  jobTitle: 'Software Quality Assurance Engineer',
+  name: 'Lorem Ipsum',
+  jobTitle: 'Dolor Sit Amet',
   url: 'https://uphoffjs.github.io',
   sameAs: ['https://github.com/uphoffjs', 'https://linkedin.com/in/uphoffjs'],
-  knowsAbout: [
-    'Test Automation',
-    'Cypress',
-    'Playwright',
-    'Selenium',
-    'Quality Assurance',
-    'Software Testing',
-    'WCAG Accessibility',
-  ],
+  knowsAbout: ['Ipsum', 'Dolor', 'Consectetur', 'Adipiscing', 'Tempor', 'Incididunt', 'Labore'],
 }
 
 export default function RootLayout({

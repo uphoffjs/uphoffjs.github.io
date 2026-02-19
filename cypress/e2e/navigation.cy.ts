@@ -1,6 +1,6 @@
 describe('Page routes load without errors', () => {
   const routes = [
-    { path: '/', title: 'Jacob Uphoff' },
+    { path: '/', title: 'Lorem Ipsum' },
     { path: '/about/', title: 'About' },
     { path: '/projects/', title: 'Projects' },
     { path: '/links/', title: 'Links' },

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   openGraph: {
-    title: 'Projects | Jacob Uphoff',
+    title: 'Projects | Lorem Ipsum',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     url: 'https://uphoffjs.github.io/projects',

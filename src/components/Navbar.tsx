@@ -26,7 +26,7 @@ export default function Navbar() {
             href="/"
             className="font-semibold text-lg text-white hover:text-green-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-950"
           >
-            Jacob Uphoff
+            Lorem Ipsum
           </Link>
 
           {/* Desktop nav links */}

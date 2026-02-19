@@ -5,24 +5,18 @@ export interface SkillCategory {
 
 export const skillCategories: SkillCategory[] = [
   {
-    category: 'Automation',
-    skills: ['Cypress', 'Playwright', 'Selenium', 'TypeScript'],
+    category: 'Lorem',
+    skills: ['Ipsum', 'Dolor', 'Sit', 'Amet'],
   },
   {
-    category: 'Manual Testing',
-    skills: ['Exploratory Testing', 'Test Case Design', 'Bug Reporting', 'ISTQB'],
+    category: 'Consectetur',
+    skills: ['Adipiscing', 'Elit', 'Sed', 'Eiusmod'],
   },
   {
-    category: 'Tools & Frameworks',
-    skills: ['GitHub Actions', 'Postman', 'Jira', 'VS Code'],
+    category: 'Tempor',
+    skills: ['Incididunt', 'Labore', 'Dolore', 'Magna'],
   },
 ]
 
-// Flat list for homepage preview (top 4-6 recognizable QA tools)
-export const skillsPreview: string[] = [
-  'Cypress',
-  'TypeScript',
-  'GitHub Actions',
-  'Playwright',
-  'Postman',
-]
+// Flat list for homepage preview
+export const skillsPreview: string[] = ['Ipsum', 'Dolor', 'Consectetur', 'Adipiscing', 'Tempor']

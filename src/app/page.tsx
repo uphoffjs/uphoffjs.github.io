@@ -3,13 +3,13 @@ import Link from 'next/link'
 import { skillsPreview } from '@/data/skills'
 
 export const metadata: Metadata = {
-  title: 'Jacob Uphoff | Software Quality Assurance Engineer',
+  title: 'Lorem Ipsum | Dolor Sit Amet',
   description:
-    'QA engineer portfolio — test automation with Cypress, Playwright, and Selenium. Building confidence in every release through strategic quality-first thinking.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   openGraph: {
-    title: 'Jacob Uphoff | Software Quality Assurance Engineer',
+    title: 'Lorem Ipsum | Dolor Sit Amet',
     description:
-      'QA engineer portfolio — test automation with Cypress, Playwright, and Selenium. Building confidence in every release through strategic quality-first thinking.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     url: 'https://uphoffjs.github.io',
   },
 }
@@ -27,18 +27,18 @@ export default function Home() {
             data-cy="home-heading"
             className="bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent text-5xl sm:text-6xl font-bold tracking-tight"
           >
-            Jacob Uphoff
+            Lorem Ipsum
           </h1>
 
           {/* Title */}
           <p className="text-xl sm:text-2xl text-gray-400 mt-4 font-medium">
-            Software Quality Assurance Engineer
+            Dolor Sit Amet Consectetur
           </p>
 
           {/* Philosophy */}
           <p className="text-gray-400 mt-6 max-w-lg mx-auto leading-relaxed">
-            Building confidence in every release through strategic test automation and quality-first
-            thinking.
+            Adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut
+            enim ad minim veniam.
           </p>
 
           {/* CTA */}
@@ -47,7 +47,7 @@ export default function Home() {
             href="/projects"
             className="inline-block bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white px-8 py-3 rounded-lg transition-all font-medium mt-8 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-950"
           >
-            See My Work
+            Ut Enim Ad Minim
           </Link>
 
           {/* Decorative divider */}
@@ -65,7 +65,7 @@ export default function Home() {
         className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16"
       >
         <h2 className="text-center text-sm font-mono uppercase tracking-widest bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent mb-8">
-          What I Work With
+          Quis Nostrud Exercitation
         </h2>
         <ul className="flex flex-wrap justify-center gap-3">
           {skillsPreview.map(skill => (
@@ -86,10 +86,10 @@ export default function Home() {
         className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center"
       >
         <h2 className="text-2xl font-bold bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent mb-4">
-          Let&apos;s work together
+          Excepteur Sint Occaecat
         </h2>
         <p className="text-gray-400 mb-8 max-w-md mx-auto">
-          Looking for a QA engineer who takes quality seriously? Get in touch.
+          Cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <Link
@@ -97,14 +97,14 @@ export default function Home() {
             href="/projects"
             className="px-6 py-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white rounded-lg transition-all font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-950"
           >
-            View My Work
+            Dolor Sit Amet
           </Link>
           <Link
             data-cy="home-cta-links"
             href="/links"
             className="px-6 py-3 border border-gray-700 hover:border-green-500 text-gray-300 hover:text-green-400 rounded-lg transition-all font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-950"
           >
-            Get in Touch
+            Consectetur Elit
           </Link>
         </div>
       </section>
