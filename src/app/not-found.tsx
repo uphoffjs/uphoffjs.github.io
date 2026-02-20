@@ -12,10 +12,12 @@ export default function NotFound() {
       >
         404
       </p>
-      <h1 className="text-2xl font-semibold text-gray-100 mb-4">Lorem ipsum dolor sit amet</h1>
+      <h1 className="text-2xl font-semibold text-gray-100 mb-4">
+        Looks like this page didn&apos;t pass QA
+      </h1>
       <p className="text-gray-400 mb-8 max-w-md">
-        Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua &mdash; ut enim ad minim veniam.
+        We ran our tests and this URL returned a 404. Maybe it was deprecated, maybe it never
+        existed &mdash; either way, it&apos;s been flagged.
       </p>
       <Link
         data-cy="not-found-home-link"

@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og'
 
 export const dynamic = 'force-static'
-export const alt = 'Lorem Ipsum | Dolor Sit Amet'
+export const alt = 'Jacob Uphoff | Software QA Engineer'
 export const size = {
   width: 1200,
   height: 630,
@@ -53,7 +53,7 @@ export default function Image() {
             letterSpacing: '-1px',
           }}
         >
-          Lorem Ipsum
+          Jacob Uphoff
         </div>
 
         {/* Title */}
@@ -64,7 +64,7 @@ export default function Image() {
             fontWeight: 400,
           }}
         >
-          Dolor Sit Amet Consectetur
+          Software QA Engineer
         </div>
 
         {/* Divider */}
@@ -86,7 +86,7 @@ export default function Image() {
             textAlign: 'center',
           }}
         >
-          Ipsum · Dolor · Consectetur · Adipiscing
+          E2E Testing · API Testing · CI/CD · Accessibility
         </div>
       </div>
     </div>,

@@ -4,11 +4,11 @@ import SkillsGrid from '@/components/SkillsGrid'
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    'Jacob Uphoff — Software QA Engineer with 6+ years of experience across manual and automated testing. Based in Knoxville, TN.',
   openGraph: {
-    title: 'About | Lorem Ipsum',
+    title: 'About | Jacob Uphoff',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'Jacob Uphoff — Software QA Engineer with 6+ years of experience across manual and automated testing. Based in Knoxville, TN.',
     url: 'https://uphoffjs.github.io/about',
   },
 }
@@ -26,24 +26,19 @@ export default function AboutPage() {
       {/* Section 1 — Bio */}
       <section data-cy="about-bio" className="mb-0">
         <h2 className="text-xl font-semibold bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent mb-4">
-          Lorem Ipsum
+          Who I Am
         </h2>
         <p className="text-gray-400 leading-relaxed mb-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          I&apos;m Jacob Uphoff, a Software QA Engineer based in Knoxville, TN with 6+ years of
+          experience across manual and automated testing. I&apos;ve worked at Apple, Tombras, and
+          StoragePug, holding roles in software QA engineering and technical support.
         </p>
         <p className="text-gray-400 leading-relaxed mb-4">
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-          anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-          veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          At Apple, I rotated through multiple Career Experience programs in QA working on CI/CD
+          pipelines and manually testing daily builds on the projects I was assigned.
         </p>
         <p className="text-gray-400 leading-relaxed">
-          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-          consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-          est, qui dolorem ipsum quia dolor sit amet consectetur adipisci velit.
+          I&apos;m currently pursuing a BS in IT Project Management.
         </p>
       </section>
 
@@ -52,19 +47,21 @@ export default function AboutPage() {
       {/* Section 2 — QA Philosophy */}
       <section data-cy="about-philosophy" className="mb-0">
         <h2 className="text-xl font-semibold bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent mb-4">
-          Dolor Sit Amet
+          My Approach to QA
         </h2>
         <p className="text-gray-400 leading-relaxed mb-4">
-          Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
-          nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea
-          voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat
-          quo voluptas nulla pariatur.
+          I&apos;m a QA Engineer, not a QA Tester. The difference matters. Testing for defects is
+          part of my job, but not all of it. I focus on improving how teams deliver quality
+          software. That means building automation frameworks, designing test strategies, and
+          identifying gaps in testing processes that slow teams down. When I find those gaps, I
+          propose solutions and build them.
         </p>
         <p className="text-gray-400 leading-relaxed">
-          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-          voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-          cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi id
-          est laborum et dolorum fuga.
+          I believe in shift-left testing. Quality shouldn&apos;t be an afterthought bolted on at
+          the end. I push for early involvement in requirements, BDD workflows that define
+          acceptance criteria upfront, and collaboration with developers on testability. I use AI
+          where it adds real value to testing workflows, but manual testing is irreplaceable for the
+          things automation can&apos;t catch.
         </p>
       </section>
 
@@ -73,7 +70,7 @@ export default function AboutPage() {
       {/* Section 3 — Skills */}
       <section data-cy="about-skills" className="mb-0">
         <h2 className="text-xl font-semibold bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent mb-6">
-          Consectetur &amp; Adipiscing
+          Skills &amp; Tools
         </h2>
         <SkillsGrid />
       </section>
@@ -83,17 +80,11 @@ export default function AboutPage() {
       {/* Section 4 — Interests */}
       <section data-cy="about-interests" className="mb-16">
         <h2 className="text-xl font-semibold bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent mb-4">
-          Tempor Incididunt
+          Beyond Work
         </h2>
-        <p className="text-gray-400 leading-relaxed mb-4">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-          laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-          architecto beatae vitae dicta sunt explicabo.
-        </p>
         <p className="text-gray-400 leading-relaxed">
-          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-          consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-          est qui dolorem ipsum quia dolor sit amet.
+          When I&apos;m not testing software, you can find me hiking and camping around East
+          Tennessee, playing Magic: The Gathering, or hanging out with my dogs, Titus and Athena.
         </p>
       </section>
     </div>

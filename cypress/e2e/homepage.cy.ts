@@ -8,7 +8,7 @@ describe('Homepage content', () => {
   })
 
   it('renders heading with name', () => {
-    cy.getBySel('home-heading').should('be.visible').and('contain.text', 'Lorem Ipsum')
+    cy.getBySel('home-heading').should('be.visible').and('contain.text', 'Jacob Uphoff')
   })
 
   it('renders skills preview section with skill tags', () => {

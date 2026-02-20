@@ -4,12 +4,10 @@ import { ProjectCard } from '@/components/ProjectCard'
 
 export const metadata: Metadata = {
   title: 'Projects',
-  description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  description: 'QA engineering projects and case studies by Jacob Uphoff — coming soon.',
   openGraph: {
-    title: 'Projects | Lorem Ipsum',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    title: 'Projects | Jacob Uphoff',
+    description: 'QA engineering projects and case studies by Jacob Uphoff — coming soon.',
     url: 'https://uphoffjs.github.io/projects',
   },
 }
@@ -24,13 +22,22 @@ export default function ProjectsPage() {
         Projects
       </h1>
       <p className="text-gray-400 mb-12 max-w-lg">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.
+        Detailed case studies of my QA engineering work. Check back soon.
       </p>
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {projects.map(project => (
-          <ProjectCard key={project.slug} project={project} />
-        ))}
-      </div>
+      {projects.length > 0 ? (
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {projects.map(project => (
+            <ProjectCard key={project.slug} project={project} />
+          ))}
+        </div>
+      ) : (
+        <div className="text-center py-16 border border-gray-800 rounded-lg">
+          <p className="text-2xl font-semibold bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent mb-2">
+            Coming Soon
+          </p>
+          <p className="text-gray-400">Project case studies are currently being written.</p>
+        </div>
+      )}
     </div>
   )
 }

@@ -8,31 +8,31 @@ export interface SiteLink {
 
 export const siteLinks: SiteLink[] = [
   {
-    label: 'Lorem',
+    label: 'GitHub',
     href: 'https://github.com/uphoffjs',
     type: 'github',
-    description: 'Lorem ipsum dolor sit amet',
+    description: 'Check out my projects and contributions',
     dataCy: 'link-github',
   },
   {
-    label: 'Ipsum',
+    label: 'LinkedIn',
     href: 'https://linkedin.com/in/uphoffjs',
     type: 'linkedin',
-    description: 'Consectetur adipiscing elit',
+    description: 'Connect with me professionally',
     dataCy: 'link-linkedin',
   },
   {
-    label: 'Dolor',
-    href: 'mailto:lorem@ipsum.dev',
+    label: 'Email',
+    href: 'mailto:uphoffjs@gmail.com',
     type: 'email',
-    description: 'Sed do eiusmod tempor',
+    description: 'Send me a message',
     dataCy: 'link-email',
   },
   {
-    label: 'Sit Amet',
+    label: 'Resume',
     href: '/jacob-uphoff-resume.docx',
     type: 'resume',
-    description: 'Incididunt ut labore et dolore',
+    description: 'Download my resume',
     dataCy: 'link-resume',
   },
 ]

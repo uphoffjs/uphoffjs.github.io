@@ -3,6 +3,8 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import { projects } from '@/data/projects'
 
+export const dynamicParams = false
+
 export function generateStaticParams() {
   return projects.map(project => ({
     slug: project.slug,
@@ -21,7 +23,7 @@ export async function generateMetadata({
     title: project.title,
     description: project.shortDescription,
     openGraph: {
-      title: `${project.title} | Lorem Ipsum`,
+      title: `${project.title} | Jacob Uphoff`,
       description: project.shortDescription,
       url: `https://uphoffjs.github.io/projects/${slug}`,
     },

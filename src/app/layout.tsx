@@ -12,35 +12,43 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://uphoffjs.github.io'),
   title: {
-    default: 'Lorem Ipsum | Dolor Sit Amet',
-    template: '%s | Lorem Ipsum',
+    default: 'Jacob Uphoff | Software QA Engineer',
+    template: '%s | Jacob Uphoff',
   },
   description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    'Portfolio of Jacob Uphoff — Software QA Engineer building better testing processes, not just running more tests.',
   openGraph: {
-    title: 'Lorem Ipsum | Dolor Sit Amet',
+    title: 'Jacob Uphoff | Software QA Engineer',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'Portfolio of Jacob Uphoff — Software QA Engineer building better testing processes, not just running more tests.',
     type: 'website',
     url: 'https://uphoffjs.github.io',
-    siteName: 'Lorem Ipsum',
+    siteName: 'Jacob Uphoff',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Lorem Ipsum | Dolor Sit Amet',
+    title: 'Jacob Uphoff | Software QA Engineer',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'Portfolio of Jacob Uphoff — Software QA Engineer building better testing processes, not just running more tests.',
   },
 }
 
 const personSchema = {
   '@context': 'https://schema.org',
   '@type': 'Person',
-  name: 'Lorem Ipsum',
-  jobTitle: 'Dolor Sit Amet',
+  name: 'Jacob Uphoff',
+  jobTitle: 'Software QA Engineer',
   url: 'https://uphoffjs.github.io',
   sameAs: ['https://github.com/uphoffjs', 'https://linkedin.com/in/uphoffjs'],
-  knowsAbout: ['Ipsum', 'Dolor', 'Consectetur', 'Adipiscing', 'Tempor', 'Incididunt', 'Labore'],
+  knowsAbout: [
+    'Test Automation',
+    'E2E Testing',
+    'API Testing',
+    'CI/CD',
+    'Shift-Left Testing',
+    'Accessibility',
+    'BDD',
+  ],
 }
 
 export default function RootLayout({
